@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rehman Azam - Graphic Designer Portfolio" />
+  <title>Rehman Azam | Graphic Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4rem;
+      background-color: #121212;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #ffffff;
+    }
+
+    nav a {
+      margin-left: 2.5rem;
+      color: #cccccc;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffd1;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6rem 4rem;
+      background: linear-gradient(135deg, #1b1b1b, #0f0f0f);
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      flex: 1 1 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1.3rem;
+      color: #bbbbbb;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #00ffd1, #00c5a7);
+      color: #000;
+      padding: 1rem 2rem;
+      border: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 8px 20px rgba(0, 255, 209, 0.2);
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .hero-image {
+      flex: 1 1 300px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    section {
+      padding: 5rem 4rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .services,
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card,
+    .portfolio-item {
+      background-color: #1c1c1c;
+      padding: 2rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #2a2a2a;
+    }
+
+    .service-card:hover,
+    .portfolio-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0, 255, 209, 0.25);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #00ffd1;
+    }
+
+    .service-card p {
+      color: #dddddd;
+      font-size: 1.05rem;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-item p {
+      color: #ccc;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #121212;
+      text-align: center;
+      padding: 3rem;
+      color: #888;
+      font-size: 0.95rem;
+      border-top: 1px solid #1f1f1f;
+    }
+
+    .social-link {
+      color: #00ffd1;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      text-decoration: underline;
+    }
+
+    .agency-logos img {
+      max-width: 250px;
+      margin: 1rem;
+      border-radius: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .hero-text h1 {
+        font-size: 3rem;
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Rehman Azam</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#agencies">Companies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Graphic Designer</h1>
+      <p>I'm a passionate graphic designer with a keen eye for detail and a love for turning ideas into impactful visuals. From branding and social media designs to print and digital creatives, I specialize in creating designs that communicate clearly and beautifully.</p>
+      <a href="https://www.instagram.com/rehman.northxagency?igsh=MTR5eHdtNDk5aDU0Nw==" target="_blank"><button class="cta-button">Follow on Instagram</button></a>
+      <a href="https://drive.google.com/drive/u/4/folders/1E1sj6pWhzXYZiljbiE4DaaBr1x0vAlW_" target="_blank">
+        <button class="cta-button" style="margin-left: 1rem; margin-top: 1rem;">View Full Portfolio</button>
+      </a>
+    </div>
+    
+    <div class="hero-image">
+      <img src="https://i.pinimg.com/736x/a0/02/3b/a0023be0896c0ec4ffdb7141870d782d.jpg" alt="Futuristic Design">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="font-size: 1.15rem; max-width: 900px; margin: auto; text-align: center;">With a strong background in design and a mastery of Adobe Photoshop and Illustrator, I bring brands to life with a blend of creativity and strategy. Always learning and evolving, I stay updated with the latest design trends and technologies to ensure my work remains fresh, effective, and ahead of the curve.</p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Branding & Identity</h3>
+        <p>Create cohesive visual identities that speak your brand's language and values.</p>
+      </div>
+      <div class="service-card">
+        <h3>Social Media Design</h3>
+        <p>Design eye-catching social posts, covers, and campaigns that boost engagement.</p>
+      </div>
+      <div class="service-card">
+        <h3>Print & Digital Creatives</h3>
+        <p>From flyers to digital banners, I design materials that grab attention and inspire action.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="services">
+      <div class="service-card">
+        <h3>Thumbnails</h3>
+        <div class="portfolio">
+          <div class="portfolio-item">
+            <img src="https://i.pinimg.com/736x/36/c6/3b/36c63b689942d18d27c4279ffa511484.jpg" alt="Thumbnail Design">
+            <p>YouTube Thumbnail: Minimal Style</p>
+          </div>
+        </div>
+        <button class="cta-button" onclick="window.location.href='https://drive.google.com/drive/u/4/folders/1-aW1_QD3Wa9wc1_yOBgpOdg1KmCHW9v-'">View Thumbnails</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Posters</h3>
+        <div class="portfolio">
+          <div class="portfolio-item">
+            <img src="https://i.pinimg.com/736x/94/fc/79/94fc79766b8213fa61c7b3329abeab92.jpg" alt="Poster Design">
+            <p>Event Poster: Music Event</p>
+          </div>
+        </div>
+        <button class="cta-button" onclick="window.location.href='https://drive.google.com/drive/u/4/folders/1ekBz_hMJltjWMyUAjQdn-bE67OXPtFA2'">View Posters</button>
+      </div>
+
+      <div class="service-card">
+        <h3>Social Media Designs</h3>
+        <div class="portfolio">
+          <div class="portfolio-item">
+            <img src="https://i.pinimg.com/736x/ff/f1/82/fff1826450a7f7e7eacc27967a747d94.jpg" alt="Social Design">
+            <p>Instagram Carousel: Promo Design</p>
+          </div>
+        </div>
+        <button class="cta-button" onclick="window.location.href='https://drive.google.com/drive/u/4/folders/1cN5e6cC8ymLm-frZddMaRJnu_KrgSVBJ'">View Social Media</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="agencies">
+    <h2 class="section-title">Agencies I've Worked With</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3><a href="https://www.thefurexmedia.com/" target="_blank" class="social-link">The Furex Media</a></h3>
+        <p>Instagram: <a href="https://www.instagram.com/thefurexmedia_?igsh=MWc0N3ByOTJubTl3Mw==" target="_blank" class="social-link">@thefurexmedia_</a></p>
+      </div>
+      <div class="service-card">
+        <h3><a href="https://www.tendzflow.com/" target="_blank" class="social-link">TendzFlow Agency</a></h3>
+        <p>Instagram: <a href="https://www.instagram.com/tendzflow?igsh=MXdxcWZhOGN3cXlzOA==" target="_blank" class="social-link">@tendzflow</a></p>
+      </div>
+      <div class="service-card">
+        <h3><a href="https://www.instagram.com/talentsplug?igsh=MWlnYWxwZ2pzczR3aw==" target="_blank" class="social-link">TalentsPlug</a></h3>
+        <p>Instagram: <a href="https://www.instagram.com/talentsplug?igsh=MWlnYWxwZ2pzczR3aw==" target="_blank" class="social-link">@talentsplug</a></p>
+      </div>
+    </div>
+    <p style="text-align: center; color: #aaa; font-size: 1rem; margin-top: 2rem;">Note: All social media posts for the above-mentioned agencies were created by me.</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div style="max-width: 700px; margin: auto; text-align: center; font-size: 1.1rem; color: #ccc;">
+      <p>Email: <a href="mailto:rehman.northxagency@gmail.com" class="social-link">rehman.northxagency@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/rehman.northxagency?igsh=MTR5eHdtNDk5aDU0Nw==" target="_blank" class="social-link">@rehman.northxagency</a></p>
+      <p>WhatsApp: <a href="https://wa.me/923276747558" target="_blank" class="social-link">0327 6747558</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Connect with me on <a href="https://www.instagram.com/rehman.northxagency?igsh=MTR5eHdtNDk5aDU0Nw==" target="_blank" class="social-link">Instagram</a></p>
+    <p>&copy; 2025 Rehman Azam. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
